@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+    .centrar{
+        @apply flex justify-center items-center
+    }
+
+    .caja{
+        @apply bg-sky-600 w-32 h-32 p-5 text-5xl font-semibold font-sans
+                centrar
+    }
+}
+
+@media (max-width: 420px) {
+    .caja{
+        width: 100px;
+        height: 100px;
+    }
+    .textoMensaje{
+        font-size: 30px;
+    }
+}
+
